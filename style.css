@@ -1,0 +1,113 @@
+/*================================*/
+/*RESET DEFAULT STYLES*/
+/*================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/*========================================*/
+/*STYLING THE CURRENCY CONVERTER*/
+/*========================================*/
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.top-bar h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.converter {
+  padding: 20px;
+}
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.currency-select img {
+  width: 50px;
+  height: 20px;
+  object-fit: cover;
+}
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: grey;
+  font-size: 14px;
+  cursor: pointer;
+}
+.currency-row input {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  width: 120px;
+  outline: none;
+}
+.keypad {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  padding: 10px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 60px);
+
+  gap: 30px;
+
+}
+.keypad button {
+  background: #111;
+  border: none;
+  color: white;
+  font-size: 20px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.clear {
+  grid-column: 4;
+  grid-row: 1/span 2;
+  border-radius: 30px;
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete {
+  grid-column: 4;
+  grid-row: 3/span 2;
+  border-radius: 30px;
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!--TOP BAR-->
+    <div class="top-bar">
+      <button class="back-btn">&larr;</button>
+      <h2>Currency Converter</h2>
+    </div>
+
+    <!--CURRENCY DISPLAY SECTION-->
+    <div class="converter">
+
+      <!-- FIRST CURRENCY -->
+        <div class="currency-row">
+          <div class="currency-select">
+            <img src="https://flagcdn.com/w40/us.png" alt="USD">
+            <span data-currency="USD">USD</span>
+            <button class="dropdown-btn">&#9660;</button>
+          </div>
+          <input type="text" id="amount1" placeholder="0">
+        </div>
+
+        <!--SECOND BUTTON-->
+        <div class="currency-row">
+          <div class="currency-select">
+            <img src="https://flagcdn.com/w40/eu.png" alt="EUR">
+            <span data-currency="EUR">EUR</span>
+            <button class="dropdown-btn">&#9660;</button>
+          </div>
+          <input type="text" id="amount2" placeholder="0">
+        </div>
+
+        <!--THIRD CURRENCY-->
+        <div class="currency-row">
+          <div class="currency-select">
+            <img src="https://flagcdn.com/w40/ke.png" alt="KES">
+            <span data-currency="KES">KES</span>
+            <button class="dropdown-btn">&#9660;</button>
+          </div>
+          <input type="text" id="amount3" placeholder="0">
+        </div>
+    </div>
+
+    <!--KEYPAD-->
+    <div class="keypad">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+
+      <button class="clear">AC</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+
+      <button class="delete">&#9003;</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
